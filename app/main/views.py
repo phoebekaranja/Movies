@@ -12,7 +12,7 @@ def index():
     '''
      # Getting popular movie
     popular_movies = get_movies('popular')
-    print(popular_movies)
+
     upcoming_movie = get_movies('upcoming')
     now_showing_movie = get_movies('now_playing')
     title = 'Home - Welcome to The best Movie Review Website Online'
@@ -50,7 +50,7 @@ def search(movie_name):
     title =f'search result for the {movie_name}'
     return render_template('search.html',movies = searched_movies)
 
-    
+
 @main.route('/movie/review/new/<int:id>', methods = ['GET','POST'])
 def new_review(id):
     form = ReviewForm()

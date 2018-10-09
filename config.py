@@ -11,9 +11,9 @@ class Config:
 
 class ProdConfig(Config):
     pass
-    
 
-class Devconfig(Config):
+
+class DevConfig(Config):
     '''
     Development configuration child class
     Args:
@@ -22,6 +22,6 @@ class Devconfig(Config):
     DEBUG = True
 
 config_options = {
-    'development':Devconfig,
-    'production':ProdConfig
+'development':DevConfig,
+'production':ProdConfig
 }
