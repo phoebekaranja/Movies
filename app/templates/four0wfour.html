@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% block content %}
+     <h1>Whoops we can't find that page</h1>
+ {% endblock %}
+ {%block styles %}
+  {{super()}}
+  <!--Importing the simple mde css and js files  -->
+  {{ simplemde.css}}
+  {{ simplemde.js }}
+
+{% endblock %}
