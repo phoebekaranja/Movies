@@ -16,7 +16,7 @@ migrate = Migrate(app,db)
 manager.add_command('server',Server)
 manager.add_command('db',MigrateCommand)
 
-@manager .command
+@manager.command
 def test():
     """Run the unit tests."""
 
